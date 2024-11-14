@@ -1,7 +1,7 @@
 # Fichiers temporaires
 latest_code.zip
 temp_code/
-.idea/
+.idea
 
 # Fichiers Python compilés
 __pycache__/
