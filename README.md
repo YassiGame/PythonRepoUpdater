@@ -65,39 +65,3 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 📞 Support
 
 Pour toute question ou assistance supplémentaire, n'hésitez pas à me contacter.
-
-
----
-
-**Remarques supplémentaires :**
-
-- **Dépendances :** Le script utilise les modules `requests` et `pyyaml`. Assurez-vous de les installer en exécutant :
-
-  ```bash
-  pip install requests pyyaml
-  ```
-
-- **Fichier `.gitignore` :** Le fichier `.gitignore` est configuré pour ignorer les fichiers temporaires, les environnements virtuels, les fichiers compilés, les logs, et le fichier `config.yaml` si vous utilisez un système de contrôle de version comme Git.
-
-- **Sécurité :**
-  - **Prudence lors de l'exécution automatique du code :** Assurez-vous que le code téléchargé est fiable avant de l'exécuter automatiquement.
-  - **Gestion des informations sensibles :** Évitez de stocker des informations sensibles dans le fichier `config.yaml`. Si nécessaire, utilisez des variables d'environnement ou un gestionnaire de secrets.
-
-- **Gestion des versions antérieures à Python 3.8 :**
-
-  Si vous utilisez une version de Python antérieure à 3.8, remplacez les appels à `shutil.copytree` par la fonction suivante :
-
-  ```python
-  def copy_directory(src, dest, overwrite):
-      if os.path.exists(dest) and overwrite:
-          shutil.rmtree(dest)
-      shutil.copytree(src, dest)
-
-  # Dans les boucles de copie, remplacez :
-  if os.path.isdir(s):
-      copy_directory(s, d, overwrite)
-  else:
-      if os.path.exists(d) and not overwrite:
-          continue
-      shutil.copy2(s, d)
-  ```

@@ -1,5 +1,5 @@
 # Remplacez par l'URL de votre dépôt
-repo_url: 'https://github.com/utilisateur/nom_du_depot'
+repo_url: 'https://github.com/YassiCorp/Discord-Bot.git'
 
 # Branche du dépôt à télécharger
 branch: 'main'
