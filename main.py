@@ -1,5 +1,3 @@
-# update_script.py
-
 import os
 import requests
 import zipfile
