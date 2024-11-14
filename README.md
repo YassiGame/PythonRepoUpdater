@@ -6,7 +6,7 @@ Ce script Python permet de télécharger automatiquement la dernière version d'
 
 - 📥 **Téléchargement automatique** de la dernière version du dépôt GitHub spécifié.
 - 🔄 **Mise à jour du code** local en écrasant les fichiers existants si nécessaire.
-- 📁 **Copie du contenu** d'un dossier supplémentaire vers le répertoire racine du code.
+- 📁 **Copie du dossier supplémentaire** Le script copie le contenu du dossier supplémentaire vers le répertoire cible en **remplaçant uniquement les fichiers existants ou en ajoutant de nouveaux fichiers**, sans supprimer les fichiers qui existent déjà dans le répertoire cible mais qui ne sont pas dans le dossier supplémentaire. Cela permet, par exemple, de mettre à jour ou de remplacer des fichiers de configuration spécifiques sans affecter les autres fichiers du projet.
 - 🚀 **Exécution automatique** du code après la mise à jour.
 
 ## 📦 Installation
