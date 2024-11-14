@@ -1,6 +1,6 @@
-# 🚀 Script de Mise à Jour Automatique du Code
+# 🐍 Python - 🚀 Repo Updater
 
-Ce script Python permet de télécharger automatiquement la dernière version d'un dépôt GitHub, de mettre à jour votre code local, de copier le contenu d'un dossier supplémentaire vers le répertoire racine de votre code, et d'exécuter le code mis à jour.
+Ce script Python permet de télécharger automatiquement la dernière version **d'un dépôt GitHub**, de mettre à jour votre code local, de copier le contenu d'un dossier supplémentaire vers le répertoire racine de votre code, et d'exécuter le code mis à jour.
 
 ## 📝 Fonctionnalités
 
@@ -12,10 +12,9 @@ Ce script Python permet de télécharger automatiquement la dernière version d'
 ## 📦 Installation
 
 1. **Clonez** ce dépôt ou téléchargez les fichiers `update_script.py`, `config.yaml`, et `requirements.txt`.
-
 2. **Installez** les dépendances nécessaires :
 
-```bash 
+```bash
 pip install -r requirements.txt
 ```
 
