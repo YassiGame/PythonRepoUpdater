@@ -15,7 +15,7 @@ Ce script Python permet de télécharger automatiquement la dernière version d'
 
 2. **Installez** les dépendances nécessaires :
 
-```bash
+```bash 
 pip install requests pyyaml
 ```
 
