@@ -1,0 +1,18 @@
+# Fichiers temporaires
+latest_code.zip
+temp_code/
+.idea/
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Fichiers de logs
+*.log
+
+# Environnements virtuels
+venv/
+env/
+
+# Fichiers de configuration sensibles
+config.yaml

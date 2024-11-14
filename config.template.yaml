@@ -1,0 +1,20 @@
+# Remplacez par l'URL de votre dépôt
+repo_url: 'https://github.com/utilisateur/nom_du_depot'
+
+# Branche du dépôt à télécharger
+branch: 'main'
+
+# Chemin où le code doit être mis à jour
+target_path: '/chemin/vers/votre/code'
+
+# Mettre à true pour écraser les fichiers existants
+overwrite: true
+
+# Chemin vers le dossier à copier (ou null)
+additional_folder: '/chemin/vers/dossier/supplementaire'
+
+# Mettre à true pour exécuter le code après la mise à jour
+run_after_update: true
+
+# Script à exécuter après la mise à jour
+script_to_run: 'main.py'
