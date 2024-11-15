@@ -11,7 +11,7 @@ Ce script Python permet de télécharger automatiquement la dernière version **
 
 ## 📦 Installation
 
-1. **Clonez** ce dépôt ou (téléchargez)[https://github.com/YassiGame/PythonRepoUpdater/archive/refs/heads/main.zip] les fichiers `update_script.py`, `config.yaml`, et `requirements.txt`.
+1. **Clonez** ce dépôt ou [téléchargez](https://github.com/YassiGame/PythonRepoUpdater/archive/refs/heads/main.zip) les fichiers `update_script.py`, `config.yaml`, et `requirements.txt`.
 2. **Installez** les dépendances nécessaires :
 
 ```bash
