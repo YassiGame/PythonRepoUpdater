@@ -30,7 +30,6 @@ def update_code(config):
     """
     repo_url = config['repo_url']
     target_path = config['target_path']
-    overwrite = config.get('overwrite', False)
     additional_folder = config.get('additional_folder')
     run_after_update = config.get('run_after_update', False)
     script_to_run = config.get('script_to_run', 'main.py')
@@ -65,22 +64,9 @@ def update_code(config):
     root_folder = os.listdir(temp_dir)[0]
     code_path = os.path.join(temp_dir, root_folder)
 
-    # Copier les fichiers vers le répertoire cible
-    if not os.path.exists(target_path):
-        os.makedirs(target_path)
-
+    # Copier les fichiers vers le répertoire cible en utilisant copy_with_overwrite
     print("🔄 Mise à jour du code...")
-    for item in os.listdir(code_path):
-        s = os.path.join(code_path, item)
-        d = os.path.join(target_path, item)
-        if os.path.isdir(s):
-            if os.path.exists(d) and overwrite:
-                shutil.rmtree(d)
-            shutil.copytree(s, d, dirs_exist_ok=overwrite)
-        else:
-            if os.path.exists(d) and not overwrite:
-                continue
-            shutil.copy2(s, d)
+    copy_with_overwrite(code_path, target_path)
 
     # Copier le contenu d'un dossier supplémentaire vers le code root
     if additional_folder:

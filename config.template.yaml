@@ -1,14 +1,11 @@
 # Remplacez par l'URL de votre dépôt
-repo_url: 'https://github.com/YassiCorp/Discord-Bot.git'
+repo_url: 'https://github.com/(user)/(repo).git'
 
 # Branche du dépôt à télécharger
 branch: 'main'
 
 # Chemin où le code doit être mis à jour
 target_path: '/chemin/vers/votre/code'
-
-# Mettre à true pour écraser les fichiers existants
-overwrite: true
 
 # Chemin vers le dossier à copier (ou null)
 additional_folder: '/chemin/vers/dossier/supplementaire'
